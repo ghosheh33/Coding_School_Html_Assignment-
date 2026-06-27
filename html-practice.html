@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding School - HTML Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mahmoud Ghosheh</h1>
+        <h2>Web Development Fundamentals</h2>
+        <h3>Module Practice File</h3>
+        <h4>Topic Overviews</h4>
+        <h5>Code Implementation</h5>
+        <h6>Version 1.0</h6>
+        
+        <nav>
+            <ul>
+                <li><a href="https://orange.jo" class="nav-link" id="home-link">Orange</a></li>
+                <li><a href="#content" class="nav-link">Main Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr> <section id="content">
+        
+        <article>
+            <p>Welcome to the Coding School practice document.</p>
+            <p>My name is Mahmoud<br>Ghosheh, and this represents a line break.</p>
+
+            <p>This is <b>bold</b> text for visual impact, while this is <strong>strong</strong> text for importance.</p>
+            <p>This is <i>italic</i> text, and this is <em>emphasized</em> text.</p>
+            <p>Let's look at more formatting: <mark>mark</mark>, <small>some smaller</small>, <del>del</del>, and <ins>ins</ins> text.</p>
+            <p>Here is <sub>subscripted</sub> text and <sup>superscripted</sup> text.</p>
+            
+            <div style="border: 1px solid black;">
+                <p>This paragraph is inside a block-level div.</p>
+                This is a sentence where <span style="color: red; font-weight: bold;">only these words</span> are styled using an inline span.
+            </div>
+
+            <pre>
+function sayHello() {
+    console.log("MahmoudGhosheh");
+}
+            </pre>
+            
+            <img src="profile-pic.jpg" alt="User Profile Picture" width="200" height="200">
+            <p class="error-message">Invalid password entered.</p>
+        </article>
+
+        <aside>
+            <p>This aside contains secondary information about the modules.</p>
+        </aside>
+
+    </section>
+
+    <hr>
+
+    <section id="media">
+        <h3>Media Elements</h3>
+        
+        <audio controls autoplay muted loop>
+            <source src="horse.mp3">
+        </audio>
+        
+        <br>
+
+        <video width="320" height="240" controls poster="img.png">
+            <source src="movie.mp4" type="video/mp4">
+        </video>
+
+        <br>
+
+        <iframe src="https://ghosheh33.github.io/chess" width="300" height="150" sandbox></iframe>
+    </section>
+
+    <hr>
+
+    <section id="forms">
+        <h3>User Registration Form</h3>
+        
+        <form action="submit.php" method="POST" target="_blank" autocomplete="on">
+            
+            <fieldset>
+                <legend>Forms</legend>
+                
+                <label>Username:</label>
+                <input type="text" name="username" value="Coding school" size="10" readonly><br><br>
+
+                <label>Disabled Field:</label>
+                <input type="text" value="Coding school" disabled><br><br>
+                
+                <label>Password:</label>
+                <input type="password" maxlength="5" placeholder="اكتب هنا..." required><br><br>
+
+                <label>Email:</label>
+                <input type="email"><br><br>
+
+                <label>Age (Number):</label>
+                <input type="number" min="1" max="10"><br><br>
+
+                <label>Date of Birth:</label>
+                <input type="date"><br><br>
+
+                <label>Select Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female <br><br>
+
+                <label>Subscribe to Newsletter:</label>
+                <input type="checkbox"><br><br>
+
+                <label>Select Course:</label>
+                <select>
+                    <optgroup label="Frontend">
+                        <option>1</option>
+                        <option>2</option>
+                    </optgroup>
+                </select><br><br>
+
+                <label>Student Search:</label>
+                <input list="student">
+                <datalist id="student">
+                    <option value="Mahmoud"></option>
+                    <option value="Ali"></option>
+                </datalist><br><br>
+
+                <label>Comments:</label><br>
+                <textarea rows="4" cols="50"></textarea><br><br>
+
+                <label>Upload Documents:</label>
+                <input type="file" multiple><br><br>
+
+                <button type="submit">Submit Data</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Coding School Matrix. Built with semantic accessibility standards.</p>
+    </footer>
+
+    </body>
+</html>
